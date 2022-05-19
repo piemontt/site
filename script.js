@@ -11,11 +11,13 @@ mainButton.addEventListener("click", () => {window.scrollTo(0,0)});
 contactsButton.addEventListener("click", () => {window.scrollTo(0,150)});
 aboutButton.addEventListener("click", () => {window.scrollTo(0,0)});
 logo.addEventListener("click", () => {window.scrollTo(0,0)});
+
 window.addEventListener("scroll", 
 	()=> {
-	if (window.scrollY > 100) {
+	if (window.scrollY > 300) {
         buttonUp.classList.add("buttonup-active");
-    	} else {
+    	} 
+    else {
         buttonUp.classList.remove("buttonup-active");
     	}
 	}

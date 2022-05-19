@@ -1,9 +1,29 @@
+html {
+	overflow-y: scroll;
+}
 body {
 	display: flex;
 	justify-content: center;
 	margin: 0;
 	padding: 0;
 	background: #131313;
+	font-family: 'Vollkorn', serif;
+}
+
+h1 {
+	font-family: 'Vollkorn', serif;
+	padding: 0 0 0 50px;
+	margin: 0 0 0px 0;
+
+}
+
+a[href^="tel:"] {
+
+	color: #FFFFFF;
+	font-size: 16px;
+	font-weight: 900;
+
+
 }
 
 .container {
@@ -88,7 +108,7 @@ flex-wrap: wrap;
 
 
 .buttonup {
-  	visibility: hidden;
+  	display: none;
 }
 
 .buttonup-active {
@@ -98,7 +118,7 @@ flex-wrap: wrap;
 	position: fixed;
   	z-index: 10;
   	left: calc((100% - 800px)/4 );
-  	visibility: visible;
+  	display: block;
   	cursor: pointer;
   	opacity: 0.3;
 	transition: opacity 0.2s ease-out;
@@ -106,5 +126,59 @@ flex-wrap: wrap;
 
 .buttonup-active:hover {
 	opacity: 1;
+
+}
+
+
+.section {
+margin:  0;
+padding: 30px;
+width: 900px;
+height: 1000px;
+border: 2px dotted #1c1c1c;
+border-radius: 40px;
+color: ghostwhite;
+display: flex;
+flex-wrap: wrap;
+}
+
+
+.photo {
+	margin-top: 35px;
+	margin-left: 100px;
+	height: 200px;
+	width: 200px;
+	box-shadow: 0 0 8px 8px #131313 inset;
+	border-radius: 100px;
+	border: 2px solid #dbdbdb;
+	filter: grayscale(1);
+}
+
+
+
+.text-node {
+margin-top: 25px;
+margin-left: 25px;
+display: flex;
+width: 900px;
+flex-wrap: wrap;
+}
+
+.main-subtitle {
+	display: block;
+	padding: 5px 0 50px 250px;
+}
+
+.main-description {
+margin: 0px 0 0 5px;
+padding: 15px;
+font-family: 'Vollkorn', serif;
+line-height: 30px;
+background-color: rgba(255, 255, 255, 0.1);
+border-radius: 65px;
+width: 899px;
+text-align: center;
+align-content: center;
+flex-shrink: 1;
 
 }
